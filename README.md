@@ -87,4 +87,4 @@ results/robustness/
 figures/
 ```
 
-Only representative PDF figures are included. In particular, `figures/robustness/` keeps the representative statistical-robustness figure used in the manuscript; the full set of dataset-by-overlap figures can be regenerated from the scripts and is not stored by default to avoid unnecessary files.
+Only representative PDF figures are included. In particular, `figures/robustness/` keeps the representative statistical-robustness figure used in the manuscript, and `figures/robustness_quality_decay/` keeps representative functional-form robustness figures for the effects on the three stakeholders' utilities. The full set of dataset-by-overlap and parameter-by-parameter figures can be regenerated from the scripts and is not stored by default to avoid unnecessary files.
