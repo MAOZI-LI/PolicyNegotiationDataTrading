@@ -1,0 +1,26 @@
+Power-law decay backward-induction audit
+========================================
+1. Quality function: q_pow(t)=qmax*(1-(t/t0)^alpha).
+2. t is the actual physical delivery time returned by delivery_time(); time_ratio() is delivery_time()/t0_abs.
+3. t0=1.0, t1=0.5 in the default calibrated market.
+4. compute_quality clips t/t0 to [0,1] for linear and power decay, and returns max(q,0).
+5. Stage 3 reuses provider best response because provider utility does not directly depend on q(t); original discrete rounding and tie-breaking are preserved, including fractional part >= 0.5 rounding up.
+6. Stage 2 recomputes p_T^*(p_S) numerically for power decay with non-negative bounded p_T and multi-start coordinate grid search plus local refinement.
+7. Stage 1 recomputes p_S^* using deterministic multi-resolution grid search over p_S>=0, not the old 120-point coarse grid.
+8. Earlier values such as pS=5.042018 came from the first positive point of the old [1e-6,600] coarse grid and are not treated as final true equilibria.
+9. No linear closed-form p_T^*(p_S) or p_S^* is used when market.decay_type != linear; compute_best_strategy_and_utilities dispatches power to the numerical solver.
+10. Alpha calibration results:
+   - linear benchmark: pS=9.18122, avg_pT=0.000640424, avg_psr=0.530041, delivery_time=0.870994, time_ratio=0.870994, quality_q=12.9006, USC=671.136, UTSP=61.2473, UDP=45.0938, Stage1=analytical benchmark
+   - power alpha=0.8: pS=11.6337, avg_pT=0.000861424, avg_psr=0.556087, delivery_time=0.835777, time_ratio=0.835777, quality_q=13.3692, USC=643.993, UTSP=66.8669, UDP=71.1511, Stage1=multi_resolution_grid, domain=[0,600], final_step=8.372449417019348e-06, status=interior
+   - power alpha=1.2: pS=8.32658, avg_pT=0.000861424, avg_psr=0.556087, delivery_time=0.835777, time_ratio=0.835777, quality_q=19.3678, USC=742.919, UTSP=72.6011, UDP=71.1511, Stage1=multi_resolution_grid, domain=[0,600], final_step=8.372449417019348e-06, status=interior
+   - power alpha=1.5: pS=5.27186, avg_pT=0.000661039, avg_psr=0.53149, delivery_time=0.86857, time_ratio=0.86857, quality_q=19.0517, USC=799.057, UTSP=40.8389, UDP=47.3935, Stage1=multi_resolution_grid, domain=[0,600], final_step=8.372449417019348e-06, status=interior
+11. Recommendation ranking:
+   - alpha=1.2: score=100.000, same_order=True, fig2_internal_peak=False, |quality-linear|=6.46726
+   - alpha=1.5: score=99.700, same_order=True, fig2_internal_peak=False, |quality-linear|=6.15115
+   - alpha=0.8: score=99.600, same_order=True, fig2_internal_peak=False, |quality-linear|=0.468647
+   Recommended alpha: 1.2. It is a mild nonlinear perturbation and satisfies the same-order equilibrium and Fig.2 internal-peak checks.
+12. Generated paths:
+   - Calibration CSV: results/robustness_quality_decay/power_decay_calibration.csv
+   - Power effectiveness CSV directory: results/robustness_quality_decay/power
+   - Power figure directory: figures/robustness_quality_decay/power
+   - Response text: results/robustness_quality_decay/power_response_text.txt

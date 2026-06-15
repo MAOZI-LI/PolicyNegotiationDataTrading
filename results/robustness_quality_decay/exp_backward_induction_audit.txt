@@ -1,0 +1,16 @@
+Exponential quality decay backward-induction audit
+=================================================
+1. Quality function: q_exp(t)=qmax*exp(-eta*t), where t is actual physical delivery_time().
+2. eta is calibrated as eta_scale/t0_abs; the default t0/t1 values are recorded below.
+3. t0=1.0, t1=0.5 in the default calibrated market.
+4. Stage 3 reuses provider best response because provider utility does not directly depend on q(t); original discrete rounding and tie-breaking are preserved.
+5. Stage 2 recomputes p_T^*(p_S) numerically with non-negative bounded p_T and multi-start coordinate grid search plus local refinement.
+6. Stage 1 recomputes p_S^* using deterministic multi-resolution grid search over p_S>=0, not the old 120-point coarse grid.
+7. Earlier values such as pS=5.042018 came from the first positive point of the old [1e-6,600] coarse grid and are not treated as final true equilibria.
+8. Calibration results:
+   - linear benchmark: pS=9.18122, avg_pT=0.000640424, avg_psr=0.530041, delivery_time=0.870994, time_ratio=0.870994, quality_q=12.9006, USC=671.136, UTSP=61.2473, UDP=45.0938, Stage1=analytical benchmark
+   - exp eta_scale=2.0: pS=1.64987, avg_pT=9.36764e-05, avg_psr=0.443308, delivery_time=1.06698, time_ratio=1.06698, quality_q=11.8368, USC=746.165, UTSP=17.9315, UDP=0.879912, Stage1=multi_resolution_grid, domain=[0,600], final_step=8.372449417000846e-06, status=interior
+   - exp eta_scale=2.5: pS=6.61866, avg_pT=0.000228205, avg_psr=0.462662, delivery_time=0.996005, time_ratio=0.996005, quality_q=8.29089, USC=613.836, UTSP=46.4418, UDP=6.44903, Stage1=multi_resolution_grid, domain=[0,600], final_step=8.372449417019348e-06, status=interior
+   - exp eta_scale=3.0: pS=10.4317, avg_pT=0.000262853, avg_psr=0.468275, delivery_time=0.980669, time_ratio=0.980669, quality_q=5.27598, USC=495.981, UTSP=44.1118, UDP=8.40082, Stage1=multi_resolution_grid, domain=[0,600], final_step=8.372449417019348e-06, status=interior
+9. Generated paths:
+   - Calibration CSV: results/robustness_quality_decay/exp_decay_calibration.csv
