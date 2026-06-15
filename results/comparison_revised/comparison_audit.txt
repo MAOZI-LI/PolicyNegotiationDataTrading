@@ -1,0 +1,29 @@
+Revised Fig. 6 comparison experiment audit
+===========================================
+Fast mode: False
+Grid points per parameter: 41
+Quality decay: linear benchmark.
+Delivery-time function: logarithmic benchmark.
+Dataset and market generation: create_market() with fixed seed 1234.
+Varied parameters: lambda in [0.4,0.8], t1/t0 in [0.3,0.5].
+Baseline rules: aligned with robustness_utils.py statistical robustness baselines.
+Common risk cap multiplier: 1.0
+
+Mechanism definitions:
+- Proposed: current three-stage Stackelberg backward induction.
+- SRC: static risk compensation with fixed theta=0.7, common risk cap, risk margin=0.2, and positive TSP surplus.
+- BGM: bargaining-style risk-weighted allocation with theta=0.7, common risk cap, risk margin=0.2, and positive TSP surplus.
+- APM: auction-style allocation ranked by marginal match contribution, top fraction=0.5, theta=0.8, low theta=0.02, and second-price-style floor.
+
+Feasibility counts:
+- APM: 82/82 feasible rows
+- BGM: 82/82 feasible rows
+- Proposed: 82/82 feasible rows
+- SRC: 82/82 feasible rows
+
+Important caveat:
+These baselines are adapted to the unified policy-negotiation task. They are not full reimplementations of the original SRC/BGM/APM papers.
+
+CSV: results/comparison_revised/comparison_single_run.csv
+PNG: figures/comparison_revised/compare_revised.png
+PDF: figures/comparison_revised/compare_revised.pdf

@@ -1,0 +1,24 @@
+Piecewise delivery-time backward-induction audit
+==============================================
+1. delivery_time_type="piecewise" strictly uses the weighted overall psr=sum_i omega_i*psr_i.
+2. The implemented normalized form is t/t1=1 if psr>=theta1; 1+c1*(theta1-psr) if theta2<=psr<theta1; and 1+c1*(theta1-theta2)+c2*(theta2-psr) if psr<theta2.
+3. c1 and c2 are stored as scales relative to t1, so c1_scale=0.5 means c1=0.5*t1.
+4. t0=1.0, t1=0.5 in the default calibrated market.
+5. Stage 3 reuses provider best response because provider utility and risk cost do not directly depend on delivery time t; original discrete rounding/tie-breaking rules are preserved.
+6. Stage 2 recomputes p_T^*(p_S) numerically because the log-time analytical TSP response is not valid under the piecewise delivery-time function.
+7. Stage 1 recomputes p_S^* using deterministic multi-resolution grid search over p_S>=0.
+8. No linear/log-time closed-form p_T^*(p_S) or p_S^* is used when delivery_time_type != log.
+9. Calibration results:
+   - linear/log benchmark: pS=9.18122, avg_pT=0.000640424, avg_psr=0.530041, delivery_time=0.870994, time_ratio=0.870994, quality_q=12.9006, USC=671.136, UTSP=61.2473, UDP=45.0938, Stage1=analytical benchmark
+   - delivery_piecewise_mild: theta1=0.8, theta2=0.5, c1_scale=0.3, c2_scale=0.9: pS=0.0405896, avg_pT=8.62918e-06, avg_psr=0.437894, delivery_time=0.571577, time_ratio=0.571577, quality_q=42.8423, USC=1132.44, UTSP=1.53904, UDP=0.00634871, Stage1=multi_resolution_grid, domain=[0,600], final_step=8.37244941700952e-06, status=interior
+   - delivery_piecewise_default: theta1=0.8, theta2=0.5, c1_scale=0.5, c2_scale=1.5: pS=0.0453452, avg_pT=8.62918e-06, avg_psr=0.437894, delivery_time=0.619296, time_ratio=0.619296, quality_q=38.0704, USC=1097.88, UTSP=1.5264, UDP=0.00634871, Stage1=multi_resolution_grid, domain=[0,600], final_step=8.37244941700952e-06, status=interior
+   - delivery_piecewise_strong: theta1=0.85, theta2=0.55, c1_scale=0.7, c2_scale=2.0: pS=0.059637, avg_pT=8.62918e-06, avg_psr=0.437894, delivery_time=0.714061, time_ratio=0.714061, quality_q=28.5939, USC=1014.57, UTSP=1.50534, UDP=0.00634871, Stage1=multi_resolution_grid, domain=[0,600], final_step=8.37244941700952e-06, status=interior
+10. Recommendation ranking:
+   - delivery_piecewise_default: score=1.000, same_order=False, fig2_internal_peak=False, |delivery_time-linear|=0.251699
+   - delivery_piecewise_strong: score=0.000, same_order=False, fig2_internal_peak=False, |delivery_time-linear|=0.156934
+   - delivery_piecewise_mild: score=0.000, same_order=False, fig2_internal_peak=False, |delivery_time-linear|=0.299417
+   Recommended piecewise delivery setting: delivery_piecewise_default.
+11. Generated paths:
+   - Calibration CSV: results/robustness_quality_decay/delivery_piecewise_calibration.csv
+   - Effectiveness CSV directory: results/robustness_quality_decay/delivery_time_piecewise
+   - Figure directory: figures/robustness_quality_decay/delivery_time_piecewise

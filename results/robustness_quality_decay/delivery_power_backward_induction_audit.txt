@@ -1,0 +1,24 @@
+Power delivery-time backward-induction audit
+============================================
+1. delivery_time_type="power" (reported as delivery_decay_type=power in CSV files) strictly uses t_pow=t1*(1+sum_i omega_i*(1-psr_i)^beta).
+2. psr_i=(x_i+z_i)/|L_i| is clipped to [0,1] before applying the power term.
+3. t0=1.0, t1=0.5 in the default calibrated market.
+4. Stage 3 reuses provider best response because provider utility and risk cost do not directly depend on delivery time t; original discrete rounding/tie-breaking rules are preserved.
+5. Stage 2 recomputes p_T^*(p_S) numerically because the log-time analytical TSP response is not valid under t_pow.
+6. Stage 1 recomputes p_S^* using deterministic multi-resolution grid search over p_S>=0, not the old 120-point coarse grid.
+7. Earlier values such as pS=5.042018 came from the first positive point of the old [1e-6,600] coarse grid and are not treated as final true equilibria.
+8. No linear/log-time closed-form p_T^*(p_S) or p_S^* is used when delivery_time_type != log.
+9. Beta calibration results:
+   - linear/log benchmark: pS=9.18122, avg_pT=0.000640424, avg_psr=0.530041, delivery_time=0.870994, time_ratio=0.870994, quality_q=12.9006, USC=671.136, UTSP=61.2473, UDP=45.0938, Stage1=analytical benchmark
+   - power delivery beta=1.2: pS=0.0725975, avg_pT=8.62918e-06, avg_psr=0.437894, delivery_time=0.763272, time_ratio=0.763272, quality_q=23.6728, USC=959.992, UTSP=1.51867, UDP=0.00634871, Stage1=multi_resolution_grid, domain=[0,600], final_step=8.372449417010097e-06, status=interior
+   - power delivery beta=1.5: pS=0.0664186, avg_pT=8.62918e-06, avg_psr=0.437894, delivery_time=0.741925, time_ratio=0.741925, quality_q=25.8075, USC=984.89, UTSP=1.51419, UDP=0.00634871, Stage1=multi_resolution_grid, domain=[0,600], final_step=8.372449417010097e-06, status=interior
+   - power delivery beta=2.0: pS=0.0594193, avg_pT=8.62918e-06, avg_psr=0.437894, delivery_time=0.712689, time_ratio=0.712689, quality_q=28.7311, USC=1015.95, UTSP=1.50727, UDP=0.00634871, Stage1=multi_resolution_grid, domain=[0,600], final_step=8.37244941700952e-06, status=interior
+10. Recommendation ranking:
+   - beta=1.5: score=0.000, same_order=False, fig2_internal_peak=False, |delivery_time-linear|=0.129069
+   - beta=1.2: score=-0.300, same_order=False, fig2_internal_peak=False, |delivery_time-linear|=0.107722
+   - beta=2.0: score=-0.500, same_order=False, fig2_internal_peak=False, |delivery_time-linear|=0.158305
+   Recommended beta: 1.5.
+11. Generated paths:
+   - Calibration CSV: results/robustness_quality_decay/delivery_power_calibration.csv
+   - Effectiveness CSV directory: results/robustness_quality_decay/delivery_time_power
+   - Figure directory: figures/robustness_quality_decay/delivery_time_power

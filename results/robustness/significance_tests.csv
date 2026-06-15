@@ -1,0 +1,379 @@
+dataset,overlap_level,metric,baseline,n_pairs,mean_difference,paired_ttest_pvalue,wilcoxon_pvalue,significance_label,notes
+amazon_employee,high,U_SC,SRC,30,63.10245564445428,0.002679007017100528,0.019569215233846415,**,normal approximation (scipy unavailable)
+amazon_employee,high,U_SC,BGM,26,99.46436263394418,0.0014036694217089965,0.020130054490938434,**,normal approximation (scipy unavailable)
+amazon_employee,high,U_SC,APM,27,95.72798371562588,0.012086911401322701,0.09737299925508572,*,normal approximation (scipy unavailable)
+amazon_employee,high,U_TSP,SRC,30,27.42549748359715,3.77434879319324e-12,1.1265398499821105e-05,***,normal approximation (scipy unavailable)
+amazon_employee,high,U_TSP,BGM,26,29.319303105404284,4.615625826074861e-11,5.683519944964379e-05,***,normal approximation (scipy unavailable)
+amazon_employee,high,U_TSP,APM,27,29.903562685822184,5.4468947645480703e-14,2.9106097788856462e-05,***,normal approximation (scipy unavailable)
+amazon_employee,high,U_DP,SRC,30,71.48232689504185,1.1377957572460254e-21,3.7896194415808814e-06,***,normal approximation (scipy unavailable)
+amazon_employee,high,U_DP,BGM,26,70.21128885157981,3.7553640690216233e-17,1.8215297148968044e-05,***,normal approximation (scipy unavailable)
+amazon_employee,high,U_DP,APM,27,66.9734098443811,2.4877069920312933e-17,7.87148730246793e-06,***,normal approximation (scipy unavailable)
+amazon_employee,high,delivery_time,SRC,30,-0.051307884252737156,2.198031196318901e-14,3.7896194415808814e-06,***,normal approximation (scipy unavailable)
+amazon_employee,high,delivery_time,BGM,26,-0.0583452033823758,1.8531466332002815e-10,1.8215297148968044e-05,***,normal approximation (scipy unavailable)
+amazon_employee,high,delivery_time,APM,27,-0.046195460983573425,2.652931909869162e-08,2.0013017437675547e-05,***,normal approximation (scipy unavailable)
+amazon_employee,high,pS,SRC,30,3.2849169303066637,6.823458884449564e-05,0.0015927015020870084,***,normal approximation (scipy unavailable)
+amazon_employee,high,pS,BGM,26,1.400340846820313,0.33764210960950714,0.10138633324386154,ns,normal approximation (scipy unavailable)
+amazon_employee,high,pS,APM,27,-3.603355125570107,0.32796640659951715,0.32461181114807225,ns,normal approximation (scipy unavailable)
+amazon_employee,high,avg_pT,SRC,30,0.007267564963730386,6.411373673410377e-20,3.7896194415808814e-06,***,normal approximation (scipy unavailable)
+amazon_employee,high,avg_pT,BGM,26,0.007415694325244753,8.889905073093236e-17,1.8215297148968044e-05,***,normal approximation (scipy unavailable)
+amazon_employee,high,avg_pT,APM,27,0.007177941406108702,1.2383322468529979e-16,7.87148730246793e-06,***,normal approximation (scipy unavailable)
+amazon_employee,high,avg_psr,SRC,30,0.044442803173356873,6.059392928688907e-08,3.762049416854357e-05,***,normal approximation (scipy unavailable)
+amazon_employee,high,avg_psr,BGM,26,0.044044444278004274,9.688604158957932e-08,9.067222017758327e-05,***,normal approximation (scipy unavailable)
+amazon_employee,high,avg_psr,APM,27,0.05609649263030971,1.7909571853409672e-07,5.756328369396705e-05,***,normal approximation (scipy unavailable)
+amazon_employee,high,avg_risk_value,SRC,30,0.00011467502344074615,2.1285275739963865e-13,3.7896194415808814e-06,***,normal approximation (scipy unavailable)
+amazon_employee,high,avg_risk_value,BGM,26,0.00013784811075442428,1.692044807142127e-11,1.8215297148968044e-05,***,normal approximation (scipy unavailable)
+amazon_employee,high,avg_risk_value,APM,27,7.375468490390888e-05,8.650428207973686e-09,1.2290322210248443e-05,***,normal approximation (scipy unavailable)
+amazon_employee,high,quality_q,SRC,30,5.130788425273716,2.19803119631888e-14,3.7896194415808814e-06,***,normal approximation (scipy unavailable)
+amazon_employee,high,quality_q,BGM,26,5.8345203382375805,1.8531466332002663e-10,1.8215297148968044e-05,***,normal approximation (scipy unavailable)
+amazon_employee,high,quality_q,APM,27,4.619546098357342,2.652931909869162e-08,2.0013017437675547e-05,***,normal approximation (scipy unavailable)
+amazon_employee,high,social_welfare,SRC,30,162.01028002309332,1.469043608941355e-13,3.7896194415808814e-06,***,normal approximation (scipy unavailable)
+amazon_employee,high,social_welfare,BGM,26,198.99495459092824,2.0040151463849117e-09,1.8215297148968044e-05,***,normal approximation (scipy unavailable)
+amazon_employee,high,social_welfare,APM,27,192.60495624582921,2.035741852496631e-06,7.87148730246793e-06,***,normal approximation (scipy unavailable)
+amazon_employee,high,quality_adjusted_welfare,SRC,30,5125.127736759056,2.475035210259019e-14,3.7896194415808814e-06,***,normal approximation (scipy unavailable)
+amazon_employee,high,quality_adjusted_welfare,BGM,26,5666.545631900499,1.1504968623482477e-10,1.8215297148968044e-05,***,normal approximation (scipy unavailable)
+amazon_employee,high,quality_adjusted_welfare,APM,27,4229.845467624348,1.3421598421186541e-09,1.0997246515980011e-05,***,normal approximation (scipy unavailable)
+amazon_employee,high,welfare_per_time,SRC,30,225.00850436167136,8.507780193842725e-15,3.7896194415808814e-06,***,normal approximation (scipy unavailable)
+amazon_employee,high,welfare_per_time,BGM,26,268.1471773395526,3.529981250744477e-10,1.8215297148968044e-05,***,normal approximation (scipy unavailable)
+amazon_employee,high,welfare_per_time,APM,27,242.5638378089727,4.2583010756808304e-07,1.0997246515980011e-05,***,normal approximation (scipy unavailable)
+amazon_employee,high,quality_per_time,SRC,30,6.458917266898207,1.4932146186473973e-13,3.7896194415808814e-06,***,normal approximation (scipy unavailable)
+amazon_employee,high,quality_per_time,BGM,26,7.25916094529476,4.495327497627404e-10,1.8215297148968044e-05,***,normal approximation (scipy unavailable)
+amazon_employee,high,quality_per_time,APM,27,5.537060789852723,1.1062969375998014e-08,2.0013017437675547e-05,***,normal approximation (scipy unavailable)
+amazon_employee,high,runtime,SRC,30,-0.0007998784383138021,0.0,1.7343976283205824e-06,***,normal approximation (scipy unavailable)
+amazon_employee,high,runtime,BGM,30,-0.0003830512364705404,2.835336161843983e-34,1.7343976283205824e-06,***,normal approximation (scipy unavailable)
+amazon_employee,high,runtime,APM,30,-0.000288995107014974,4.3608568935220183e-14,2.35342099512154e-06,***,normal approximation (scipy unavailable)
+amazon_employee,low,U_SC,SRC,30,22.35383108552103,0.0,1.7343976283205824e-06,***,normal approximation (scipy unavailable)
+amazon_employee,low,U_SC,BGM,30,22.35383108552103,0.0,1.7343976283205824e-06,***,normal approximation (scipy unavailable)
+amazon_employee,low,U_SC,APM,30,22.354201898050995,0.0,1.7343976283205824e-06,***,normal approximation (scipy unavailable)
+amazon_employee,low,U_TSP,SRC,30,-22.353831085521062,0.0,1.7343976283205824e-06,***,normal approximation (scipy unavailable)
+amazon_employee,low,U_TSP,BGM,30,-22.353831085521062,0.0,1.7343976283205824e-06,***,normal approximation (scipy unavailable)
+amazon_employee,low,U_TSP,APM,30,-22.353823517918418,0.0,1.7343976283205824e-06,***,normal approximation (scipy unavailable)
+amazon_employee,low,U_DP,SRC,30,0.0,,,ns,all paired differences are zero; sample too small or all differences are zero
+amazon_employee,low,U_DP,BGM,30,0.0,,,ns,all paired differences are zero; sample too small or all differences are zero
+amazon_employee,low,U_DP,APM,30,-0.0004729751657433627,1.036994096698419e-80,1.7343976283205824e-06,***,normal approximation (scipy unavailable)
+amazon_employee,low,delivery_time,SRC,30,0.0,,,ns,all paired differences are zero; sample too small or all differences are zero
+amazon_employee,low,delivery_time,BGM,30,0.0,,,ns,all paired differences are zero; sample too small or all differences are zero
+amazon_employee,low,delivery_time,APM,30,0.0,,,ns,all paired differences are zero; sample too small or all differences are zero
+amazon_employee,low,pS,SRC,30,-0.5522915361155913,0.0,1.7343976283205824e-06,***,normal approximation (scipy unavailable)
+amazon_employee,low,pS,BGM,30,-0.5522915361155913,0.0,1.7343976283205824e-06,***,normal approximation (scipy unavailable)
+amazon_employee,low,pS,APM,30,-0.5523008101046031,0.0,1.7343976283205824e-06,***,normal approximation (scipy unavailable)
+amazon_employee,low,avg_pT,SRC,30,0.0,,,ns,all paired differences are zero; sample too small or all differences are zero
+amazon_employee,low,avg_pT,BGM,30,0.0,,,ns,all paired differences are zero; sample too small or all differences are zero
+amazon_employee,low,avg_pT,APM,30,-3.004045056733909e-08,3.7809853017197635e-66,1.7343976283205824e-06,***,normal approximation (scipy unavailable)
+amazon_employee,low,avg_psr,SRC,30,0.0,,,ns,all paired differences are zero; sample too small or all differences are zero
+amazon_employee,low,avg_psr,BGM,30,0.0,,,ns,all paired differences are zero; sample too small or all differences are zero
+amazon_employee,low,avg_psr,APM,30,0.0,,,ns,all paired differences are zero; sample too small or all differences are zero
+amazon_employee,low,avg_risk_value,SRC,30,0.0,,,ns,all paired differences are zero; sample too small or all differences are zero
+amazon_employee,low,avg_risk_value,BGM,30,0.0,,,ns,all paired differences are zero; sample too small or all differences are zero
+amazon_employee,low,avg_risk_value,APM,30,0.0,,,ns,all paired differences are zero; sample too small or all differences are zero
+amazon_employee,low,quality_q,SRC,30,0.0,,,ns,all paired differences are zero; sample too small or all differences are zero
+amazon_employee,low,quality_q,BGM,30,0.0,,,ns,all paired differences are zero; sample too small or all differences are zero
+amazon_employee,low,quality_q,APM,30,0.0,,,ns,all paired differences are zero; sample too small or all differences are zero
+amazon_employee,low,social_welfare,SRC,30,-8.337034766251842e-14,0.00030415854411898154,0.013103614110038485,***,normal approximation (scipy unavailable)
+amazon_employee,low,social_welfare,BGM,30,-8.337034766251842e-14,0.00030415854411898154,0.013103614110038485,***,normal approximation (scipy unavailable)
+amazon_employee,low,social_welfare,APM,30,-9.459503321522789e-05,1.0369935621702684e-80,1.7343976283205824e-06,***,normal approximation (scipy unavailable)
+amazon_employee,low,quality_adjusted_welfare,SRC,30,-3.637978807091713e-12,0.0004228151995236175,0.007132413699395212,***,normal approximation (scipy unavailable)
+amazon_employee,low,quality_adjusted_welfare,BGM,30,-3.637978807091713e-12,0.0004228151995236175,0.007132413699395212,***,normal approximation (scipy unavailable)
+amazon_employee,low,quality_adjusted_welfare,APM,30,-0.0037925560182581345,9.039013046433268e-104,1.7343976283205824e-06,***,normal approximation (scipy unavailable)
+amazon_employee,low,welfare_per_time,SRC,30,-1.2884508275116483e-13,0.00029928191352035066,0.007132413699395212,***,normal approximation (scipy unavailable)
+amazon_employee,low,welfare_per_time,BGM,30,-1.2884508275116483e-13,0.00029928191352035066,0.007132413699395212,***,normal approximation (scipy unavailable)
+amazon_employee,low,welfare_per_time,APM,30,-0.0001580919295899245,8.471855206452719e-96,1.7343976283205824e-06,***,normal approximation (scipy unavailable)
+amazon_employee,low,quality_per_time,SRC,30,0.0,,,ns,all paired differences are zero; sample too small or all differences are zero
+amazon_employee,low,quality_per_time,BGM,30,0.0,,,ns,all paired differences are zero; sample too small or all differences are zero
+amazon_employee,low,quality_per_time,APM,30,0.0,,,ns,all paired differences are zero; sample too small or all differences are zero
+amazon_employee,low,runtime,SRC,30,-0.0010241349538167319,0.0,1.7343976283205824e-06,***,normal approximation (scipy unavailable)
+amazon_employee,low,runtime,BGM,30,-0.0008489608764648438,0.0,1.7343976283205824e-06,***,normal approximation (scipy unavailable)
+amazon_employee,low,runtime,APM,30,-0.0008451223373413086,0.0,1.7343976283205824e-06,***,normal approximation (scipy unavailable)
+amazon_employee,medium,U_SC,SRC,30,16.25079837608741,3.9460289695498536e-11,3.112315115372921e-05,***,normal approximation (scipy unavailable)
+amazon_employee,medium,U_SC,BGM,30,16.39441833602626,1.4861823884178853e-12,3.112315115372921e-05,***,normal approximation (scipy unavailable)
+amazon_employee,medium,U_SC,APM,30,16.737088937138612,2.5555893356761115e-17,3.112315115372921e-05,***,normal approximation (scipy unavailable)
+amazon_employee,medium,U_TSP,SRC,30,-16.16043265948469,2.335609160591572e-10,3.112315115372921e-05,***,normal approximation (scipy unavailable)
+amazon_employee,medium,U_TSP,BGM,30,-16.157501639884444,2.466293703926147e-10,3.112315115372921e-05,***,normal approximation (scipy unavailable)
+amazon_employee,medium,U_TSP,APM,30,-16.150508362289884,2.8053319332859707e-10,3.112315115372921e-05,***,normal approximation (scipy unavailable)
+amazon_employee,medium,U_DP,SRC,30,0.9952961306061897,0.31731050786291404,,ns,normal approximation (scipy unavailable); sample too small or all differences are zero
+amazon_employee,medium,U_DP,BGM,30,0.9968539865191198,0.31731050786291404,,ns,normal approximation (scipy unavailable); sample too small or all differences are zero
+amazon_employee,medium,U_DP,APM,30,0.9860851567457783,0.3179267731958452,3.112315115372921e-05,ns,normal approximation (scipy unavailable)
+amazon_employee,medium,delivery_time,SRC,30,-0.0005979819401451277,0.3173105078629139,,ns,normal approximation (scipy unavailable); sample too small or all differences are zero
+amazon_employee,medium,delivery_time,BGM,30,-0.0006965551134806865,0.31731050786291415,,ns,normal approximation (scipy unavailable); sample too small or all differences are zero
+amazon_employee,medium,delivery_time,APM,30,-0.0009093127100721187,0.31731050786291404,,ns,normal approximation (scipy unavailable); sample too small or all differences are zero
+amazon_employee,medium,pS,SRC,30,-0.7150823146178145,9.870058828951957e-06,3.112315115372921e-05,***,normal approximation (scipy unavailable)
+amazon_employee,medium,pS,BGM,30,-0.7152031969917617,9.688156491740076e-06,3.112315115372921e-05,***,normal approximation (scipy unavailable)
+amazon_employee,medium,pS,APM,30,-0.7168694758462418,7.51097534459919e-06,3.112315115372921e-05,***,normal approximation (scipy unavailable)
+amazon_employee,medium,avg_pT,SRC,30,7.903420237464341e-05,0.3173105078629142,,ns,normal approximation (scipy unavailable); sample too small or all differences are zero
+amazon_employee,medium,avg_pT,BGM,30,7.938434291801225e-05,0.31731050786291415,,ns,normal approximation (scipy unavailable); sample too small or all differences are zero
+amazon_employee,medium,avg_pT,APM,30,7.809313892091432e-05,0.3180563976513311,3.112315115372921e-05,ns,normal approximation (scipy unavailable)
+amazon_employee,medium,avg_psr,SRC,30,0.0003098315543343166,0.31731050786291415,,ns,normal approximation (scipy unavailable); sample too small or all differences are zero
+amazon_employee,medium,avg_psr,BGM,30,0.0005472147434019396,0.31731050786291437,,ns,normal approximation (scipy unavailable); sample too small or all differences are zero
+amazon_employee,medium,avg_psr,APM,30,0.001074924146926907,0.31731050786291437,,ns,normal approximation (scipy unavailable); sample too small or all differences are zero
+amazon_employee,medium,avg_risk_value,SRC,30,2.044481600745124e-08,0.3173105078629142,,ns,normal approximation (scipy unavailable); sample too small or all differences are zero
+amazon_employee,medium,avg_risk_value,BGM,30,9.94104761588805e-07,0.31731050786291404,,ns,normal approximation (scipy unavailable); sample too small or all differences are zero
+amazon_employee,medium,avg_risk_value,APM,30,9.498286215267597e-07,0.3173105078629142,,ns,normal approximation (scipy unavailable); sample too small or all differences are zero
+amazon_employee,medium,quality_q,SRC,30,0.05979819401451276,0.31731050786291404,,ns,normal approximation (scipy unavailable); sample too small or all differences are zero
+amazon_employee,medium,quality_q,BGM,30,0.06965551134806867,0.3173105078629142,,ns,normal approximation (scipy unavailable); sample too small or all differences are zero
+amazon_employee,medium,quality_q,APM,30,0.09093127100721184,0.31731050786291404,,ns,normal approximation (scipy unavailable); sample too small or all differences are zero
+amazon_employee,medium,social_welfare,SRC,30,1.0856618472089015,0.3173105078629229,0.6496440323317323,ns,normal approximation (scipy unavailable)
+amazon_employee,medium,social_welfare,BGM,30,1.2337706826609254,0.31731050786292175,0.6496440323317323,ns,normal approximation (scipy unavailable)
+amazon_employee,medium,social_welfare,APM,30,1.572665731594528,0.3173878324086652,3.112315115372921e-05,ns,normal approximation (scipy unavailable)
+amazon_employee,medium,quality_adjusted_welfare,SRC,30,74.73923080710186,0.3173105078629177,0.5829195472688132,ns,normal approximation (scipy unavailable)
+amazon_employee,medium,quality_adjusted_welfare,BGM,30,86.12852079837084,0.31731050786291726,0.5829195472688132,ns,normal approximation (scipy unavailable)
+amazon_employee,medium,quality_adjusted_welfare,APM,30,110.74601632588092,0.31733396511201034,3.112315115372921e-05,ns,normal approximation (scipy unavailable)
+amazon_employee,medium,welfare_per_time,SRC,30,2.1703213819667515,0.31731050786292214,0.40081416938293446,ns,normal approximation (scipy unavailable)
+amazon_employee,medium,welfare_per_time,BGM,30,2.481309268496712,0.317310507862921,0.40081416938293446,ns,normal approximation (scipy unavailable)
+amazon_employee,medium,welfare_per_time,APM,30,3.168203755793987,0.3173594866457457,3.112315115372921e-05,ns,normal approximation (scipy unavailable)
+amazon_employee,medium,quality_per_time,SRC,30,0.09170525528718503,0.31731050786291404,,ns,normal approximation (scipy unavailable); sample too small or all differences are zero
+amazon_employee,medium,quality_per_time,BGM,30,0.10643675130560884,0.3173105078629142,,ns,normal approximation (scipy unavailable); sample too small or all differences are zero
+amazon_employee,medium,quality_per_time,APM,30,0.13787321400798927,0.3173105078629139,,ns,normal approximation (scipy unavailable); sample too small or all differences are zero
+amazon_employee,medium,runtime,SRC,30,-0.0010050614674886069,0.0,1.7343976283205824e-06,***,normal approximation (scipy unavailable)
+amazon_employee,medium,runtime,BGM,30,-0.000829315185546875,0.0,1.7343976283205824e-06,***,normal approximation (scipy unavailable)
+amazon_employee,medium,runtime,APM,30,-0.0008153835932413737,0.0,1.7343976283205824e-06,***,normal approximation (scipy unavailable)
+incident_event_log,high,U_SC,SRC,30,63.16564410809273,0.0014199051200034037,0.015658483342200588,**,normal approximation (scipy unavailable)
+incident_event_log,high,U_SC,BGM,26,100.53524664003679,0.0010641886201637502,0.016390197154517963,**,normal approximation (scipy unavailable)
+incident_event_log,high,U_SC,APM,27,92.26988081571253,0.010823253061898798,0.08804999262777846,*,normal approximation (scipy unavailable)
+incident_event_log,high,U_TSP,SRC,30,25.959764821901064,9.374459215554623e-11,1.6394463016779945e-05,***,normal approximation (scipy unavailable)
+incident_event_log,high,U_TSP,BGM,26,27.830567197657892,8.297658144784692e-10,7.835209088796227e-05,***,normal approximation (scipy unavailable)
+incident_event_log,high,U_TSP,APM,27,28.284796506135482,3.4388051009426425e-12,2.9106097788856462e-05,***,normal approximation (scipy unavailable)
+incident_event_log,high,U_DP,SRC,30,73.98930080825646,2.053422691220501e-21,3.7896194415808814e-06,***,normal approximation (scipy unavailable)
+incident_event_log,high,U_DP,BGM,26,73.179605570416,5.724809584020279e-17,1.8215297148968044e-05,***,normal approximation (scipy unavailable)
+incident_event_log,high,U_DP,APM,27,69.82147716530555,4.3994314425895624e-17,7.87148730246793e-06,***,normal approximation (scipy unavailable)
+incident_event_log,high,delivery_time,SRC,30,-0.05208247582850703,4.844643206218383e-15,3.7896194415808814e-06,***,normal approximation (scipy unavailable)
+incident_event_log,high,delivery_time,BGM,26,-0.05909048862050517,2.1072743480675647e-10,1.8215297148968044e-05,***,normal approximation (scipy unavailable)
+incident_event_log,high,delivery_time,APM,27,-0.04623819412457001,5.800124216335346e-09,1.3898014093789954e-05,***,normal approximation (scipy unavailable)
+incident_event_log,high,pS,SRC,30,3.3407169279430793,5.157111104328601e-05,0.0006156406207014231,***,normal approximation (scipy unavailable)
+incident_event_log,high,pS,BGM,26,1.483644727801965,0.27028461635087575,0.10138633324386154,ns,normal approximation (scipy unavailable)
+incident_event_log,high,pS,APM,27,-3.653725699343415,0.36307255105778935,0.32461181114807225,ns,normal approximation (scipy unavailable)
+incident_event_log,high,avg_pT,SRC,30,0.007524828984829679,1.5143481163517334e-19,3.7896194415808814e-06,***,normal approximation (scipy unavailable)
+incident_event_log,high,avg_pT,BGM,26,0.0077163626507087075,1.722812721313486e-16,1.8215297148968044e-05,***,normal approximation (scipy unavailable)
+incident_event_log,high,avg_pT,APM,27,0.007494725987797988,1.371332190361425e-16,7.87148730246793e-06,***,normal approximation (scipy unavailable)
+incident_event_log,high,avg_psr,SRC,30,0.04437338096961959,2.7452001311992453e-08,3.40705989779802e-05,***,normal approximation (scipy unavailable)
+incident_event_log,high,avg_psr,BGM,26,0.04380068178540453,5.048205623102478e-08,9.067222017758327e-05,***,normal approximation (scipy unavailable)
+incident_event_log,high,avg_psr,APM,27,0.055955961497554135,7.56832243533821e-08,6.450980270829204e-05,***,normal approximation (scipy unavailable)
+incident_event_log,high,avg_risk_value,SRC,30,0.0001054417988219163,2.2994607718305145e-11,3.7896194415808814e-06,***,normal approximation (scipy unavailable)
+incident_event_log,high,avg_risk_value,BGM,26,0.00010395336380598311,1.41118705609873e-07,1.8215297148968044e-05,***,normal approximation (scipy unavailable)
+incident_event_log,high,avg_risk_value,APM,27,7.442226126225952e-05,1.909389623187461e-12,1.2290322210248443e-05,***,normal approximation (scipy unavailable)
+incident_event_log,high,quality_q,SRC,30,5.208247582850703,4.844643206218431e-15,3.7896194415808814e-06,***,normal approximation (scipy unavailable)
+incident_event_log,high,quality_q,BGM,26,5.909048862050517,2.1072743480675647e-10,1.8215297148968044e-05,***,normal approximation (scipy unavailable)
+incident_event_log,high,quality_q,APM,27,4.623819412457,5.800124216335389e-09,1.3898014093789954e-05,***,normal approximation (scipy unavailable)
+incident_event_log,high,social_welfare,SRC,30,163.11470973825027,2.9133572414440767e-15,3.7896194415808814e-06,***,normal approximation (scipy unavailable)
+incident_event_log,high,social_welfare,BGM,26,201.54541940811072,9.847283548928908e-10,1.8215297148968044e-05,***,normal approximation (scipy unavailable)
+incident_event_log,high,social_welfare,APM,27,190.37615448715357,1.0196420018357324e-06,7.87148730246793e-06,***,normal approximation (scipy unavailable)
+incident_event_log,high,quality_adjusted_welfare,SRC,30,5212.833033914888,1.121449044596323e-14,3.7896194415808814e-06,***,normal approximation (scipy unavailable)
+incident_event_log,high,quality_adjusted_welfare,BGM,26,5742.4059856454505,1.6069067021374753e-10,1.8215297148968044e-05,***,normal approximation (scipy unavailable)
+incident_event_log,high,quality_adjusted_welfare,APM,27,4256.583263642049,2.075855265081895e-10,7.87148730246793e-06,***,normal approximation (scipy unavailable)
+incident_event_log,high,welfare_per_time,SRC,30,227.2072000037629,3.6960297965987945e-16,3.7896194415808814e-06,***,normal approximation (scipy unavailable)
+incident_event_log,high,welfare_per_time,BGM,26,271.63245848525014,2.61623567709759e-10,1.8215297148968044e-05,***,normal approximation (scipy unavailable)
+incident_event_log,high,welfare_per_time,APM,27,240.68441954352818,1.5754354954039916e-07,7.87148730246793e-06,***,normal approximation (scipy unavailable)
+incident_event_log,high,quality_per_time,SRC,30,6.561263046622396,6.973918779341787e-14,3.7896194415808814e-06,***,normal approximation (scipy unavailable)
+incident_event_log,high,quality_per_time,BGM,26,7.353768764543612,6.440692164869419e-10,1.8215297148968044e-05,***,normal approximation (scipy unavailable)
+incident_event_log,high,quality_per_time,APM,27,5.550484824871055,2.018261292071355e-09,1.3898014093789954e-05,***,normal approximation (scipy unavailable)
+incident_event_log,high,runtime,SRC,30,-0.0007861057917277018,0.0,1.7343976283205824e-06,***,normal approximation (scipy unavailable)
+incident_event_log,high,runtime,BGM,30,-0.00037799676259358725,8.01478449594659e-34,1.7343976283205824e-06,***,normal approximation (scipy unavailable)
+incident_event_log,high,runtime,APM,30,-0.0002753575642903646,1.9954656077808252e-13,2.35342099512154e-06,***,normal approximation (scipy unavailable)
+incident_event_log,low,U_SC,SRC,30,22.352034439724928,0.0,1.7343976283205824e-06,***,normal approximation (scipy unavailable)
+incident_event_log,low,U_SC,BGM,30,22.352034439724928,0.0,1.7343976283205824e-06,***,normal approximation (scipy unavailable)
+incident_event_log,low,U_SC,APM,30,22.35241256590121,0.0,1.7343976283205824e-06,***,normal approximation (scipy unavailable)
+incident_event_log,low,U_TSP,SRC,30,-22.35203443972492,0.0,1.7343976283205824e-06,***,normal approximation (scipy unavailable)
+incident_event_log,low,U_TSP,BGM,30,-22.35203443972492,0.0,1.7343976283205824e-06,***,normal approximation (scipy unavailable)
+incident_event_log,low,U_TSP,APM,30,-22.35202672286419,0.0,1.7343976283205824e-06,***,normal approximation (scipy unavailable)
+incident_event_log,low,U_DP,SRC,30,0.0,,,ns,all paired differences are zero; sample too small or all differences are zero
+incident_event_log,low,U_DP,BGM,30,0.0,,,ns,all paired differences are zero; sample too small or all differences are zero
+incident_event_log,low,U_DP,APM,30,-0.00048230379627825753,1.3302507018388638e-78,1.7343976283205824e-06,***,normal approximation (scipy unavailable)
+incident_event_log,low,delivery_time,SRC,30,0.0,,,ns,all paired differences are zero; sample too small or all differences are zero
+incident_event_log,low,delivery_time,BGM,30,0.0,,,ns,all paired differences are zero; sample too small or all differences are zero
+incident_event_log,low,delivery_time,APM,30,0.0,,,ns,all paired differences are zero; sample too small or all differences are zero
+incident_event_log,low,pS,SRC,30,-0.5523670574317915,0.0,1.7343976283205824e-06,***,normal approximation (scipy unavailable)
+incident_event_log,low,pS,BGM,30,-0.5523670574317915,0.0,1.7343976283205824e-06,***,normal approximation (scipy unavailable)
+incident_event_log,low,pS,APM,30,-0.5523765111435416,0.0,1.7343976283205824e-06,***,normal approximation (scipy unavailable)
+incident_event_log,low,avg_pT,SRC,30,0.0,,,ns,all paired differences are zero; sample too small or all differences are zero
+incident_event_log,low,avg_pT,BGM,30,0.0,,,ns,all paired differences are zero; sample too small or all differences are zero
+incident_event_log,low,avg_pT,APM,30,-3.0623913295270966e-08,1.1699187423919132e-65,1.7343976283205824e-06,***,normal approximation (scipy unavailable)
+incident_event_log,low,avg_psr,SRC,30,0.0,,,ns,all paired differences are zero; sample too small or all differences are zero
+incident_event_log,low,avg_psr,BGM,30,0.0,,,ns,all paired differences are zero; sample too small or all differences are zero
+incident_event_log,low,avg_psr,APM,30,0.0,,,ns,all paired differences are zero; sample too small or all differences are zero
+incident_event_log,low,avg_risk_value,SRC,30,0.0,,,ns,all paired differences are zero; sample too small or all differences are zero
+incident_event_log,low,avg_risk_value,BGM,30,0.0,,,ns,all paired differences are zero; sample too small or all differences are zero
+incident_event_log,low,avg_risk_value,APM,30,0.0,,,ns,all paired differences are zero; sample too small or all differences are zero
+incident_event_log,low,quality_q,SRC,30,0.0,,,ns,all paired differences are zero; sample too small or all differences are zero
+incident_event_log,low,quality_q,BGM,30,0.0,,,ns,all paired differences are zero; sample too small or all differences are zero
+incident_event_log,low,quality_q,APM,30,0.0,,,ns,all paired differences are zero; sample too small or all differences are zero
+incident_event_log,low,social_welfare,SRC,30,-7.579122514774402e-15,0.7665476306768735,0.6566419342620566,ns,normal approximation (scipy unavailable)
+incident_event_log,low,social_welfare,BGM,30,-7.579122514774402e-15,0.7665476306768735,0.6566419342620566,ns,normal approximation (scipy unavailable)
+incident_event_log,low,social_welfare,APM,30,-9.646075925502373e-05,1.3302508671889797e-78,1.7343976283205824e-06,***,normal approximation (scipy unavailable)
+incident_event_log,low,quality_adjusted_welfare,SRC,30,2.4253192047278086e-13,0.8113434639956194,0.47690655496758394,ns,normal approximation (scipy unavailable)
+incident_event_log,low,quality_adjusted_welfare,BGM,30,2.4253192047278086e-13,0.8113434639956194,0.47690655496758394,ns,normal approximation (scipy unavailable)
+incident_event_log,low,quality_adjusted_welfare,APM,30,-0.003867108443713126,5.521008043342858e-100,1.7343976283205824e-06,***,normal approximation (scipy unavailable)
+incident_event_log,low,welfare_per_time,SRC,30,-1.5158245029548804e-14,0.7275868439890228,0.8588630128278887,ns,normal approximation (scipy unavailable)
+incident_event_log,low,welfare_per_time,BGM,30,-1.5158245029548804e-14,0.7275868439890228,0.8588630128278887,ns,normal approximation (scipy unavailable)
+incident_event_log,low,welfare_per_time,APM,30,-0.0001611770683287735,1.5340682700113173e-92,1.7343976283205824e-06,***,normal approximation (scipy unavailable)
+incident_event_log,low,quality_per_time,SRC,30,0.0,,,ns,all paired differences are zero; sample too small or all differences are zero
+incident_event_log,low,quality_per_time,BGM,30,0.0,,,ns,all paired differences are zero; sample too small or all differences are zero
+incident_event_log,low,quality_per_time,APM,30,0.0,,,ns,all paired differences are zero; sample too small or all differences are zero
+incident_event_log,low,runtime,SRC,30,-0.0010035196940104167,0.0,1.7343976283205824e-06,***,normal approximation (scipy unavailable)
+incident_event_log,low,runtime,BGM,30,-0.0008400917053222656,0.0,1.7343976283205824e-06,***,normal approximation (scipy unavailable)
+incident_event_log,low,runtime,APM,30,-0.0008327325185139973,0.0,1.7343976283205824e-06,***,normal approximation (scipy unavailable)
+incident_event_log,medium,U_SC,SRC,30,16.073741514139055,5.527392007698143e-10,3.112315115372921e-05,***,normal approximation (scipy unavailable)
+incident_event_log,medium,U_SC,BGM,30,16.226443831663683,2.878191585377489e-11,3.112315115372921e-05,***,normal approximation (scipy unavailable)
+incident_event_log,medium,U_SC,APM,30,16.579525570095715,2.0689157396834878e-15,3.112315115372921e-05,***,normal approximation (scipy unavailable)
+incident_event_log,medium,U_TSP,SRC,30,-16.07581802953734,5.328659930109917e-10,3.112315115372921e-05,***,normal approximation (scipy unavailable)
+incident_event_log,medium,U_TSP,BGM,30,-16.072701655699987,5.629487700320426e-10,3.112315115372921e-05,***,normal approximation (scipy unavailable)
+incident_event_log,medium,U_TSP,APM,30,-16.065495905913984,6.384811782508198e-10,3.112315115372921e-05,***,normal approximation (scipy unavailable)
+incident_event_log,medium,U_DP,SRC,30,0.9328670121679379,0.31731050786291415,,ns,normal approximation (scipy unavailable); sample too small or all differences are zero
+incident_event_log,medium,U_DP,BGM,30,0.9340891557318401,0.31731050786291404,,ns,normal approximation (scipy unavailable); sample too small or all differences are zero
+incident_event_log,medium,U_DP,APM,30,0.925511905444277,0.3179711344903635,3.112315115372921e-05,ns,normal approximation (scipy unavailable)
+incident_event_log,medium,delivery_time,SRC,30,-0.0005075301872241515,0.31731050786291415,,ns,normal approximation (scipy unavailable); sample too small or all differences are zero
+incident_event_log,medium,delivery_time,BGM,30,-0.0006128820047909304,0.31731050786291415,,ns,normal approximation (scipy unavailable); sample too small or all differences are zero
+incident_event_log,medium,delivery_time,APM,30,-0.0008383216376429692,0.31731050786291404,,ns,normal approximation (scipy unavailable); sample too small or all differences are zero
+incident_event_log,medium,pS,SRC,30,-0.7208116152224477,8.432880991350996e-06,3.112315115372921e-05,***,normal approximation (scipy unavailable)
+incident_event_log,medium,pS,BGM,30,-0.7210144488946736,8.170466031628006e-06,3.112315115372921e-05,***,normal approximation (scipy unavailable)
+incident_event_log,medium,pS,APM,30,-0.7224414208437672,6.560826889176059e-06,3.112315115372921e-05,***,normal approximation (scipy unavailable)
+incident_event_log,medium,avg_pT,SRC,30,7.543727222024403e-05,0.3173105078629142,,ns,normal approximation (scipy unavailable); sample too small or all differences are zero
+incident_event_log,medium,avg_pT,BGM,30,7.561803671552841e-05,0.31731050786291404,,ns,normal approximation (scipy unavailable); sample too small or all differences are zero
+incident_event_log,medium,avg_pT,APM,30,7.458569749689111e-05,0.3180996908144829,3.112315115372921e-05,ns,normal approximation (scipy unavailable)
+incident_event_log,medium,avg_psr,SRC,30,0.00030675843528732427,0.31731050786291404,,ns,normal approximation (scipy unavailable); sample too small or all differences are zero
+incident_event_log,medium,avg_psr,BGM,30,0.0005322223768569649,0.31731050786291404,,ns,normal approximation (scipy unavailable); sample too small or all differences are zero
+incident_event_log,medium,avg_psr,APM,30,0.0010234726977954467,0.31731050786291415,,ns,normal approximation (scipy unavailable); sample too small or all differences are zero
+incident_event_log,medium,avg_risk_value,SRC,30,5.9298941206666875e-09,0.3173105078629139,,ns,normal approximation (scipy unavailable); sample too small or all differences are zero
+incident_event_log,medium,avg_risk_value,BGM,30,7.697696215595135e-07,0.31731050786291404,,ns,normal approximation (scipy unavailable); sample too small or all differences are zero
+incident_event_log,medium,avg_risk_value,APM,30,1.0198071723221907e-06,0.3173105078629142,,ns,normal approximation (scipy unavailable); sample too small or all differences are zero
+incident_event_log,medium,quality_q,SRC,30,0.05075301872241518,0.31731050786291415,,ns,normal approximation (scipy unavailable); sample too small or all differences are zero
+incident_event_log,medium,quality_q,BGM,30,0.06128820047909305,0.31731050786291404,,ns,normal approximation (scipy unavailable); sample too small or all differences are zero
+incident_event_log,medium,quality_q,APM,30,0.08383216376429689,0.31731050786291404,,ns,normal approximation (scipy unavailable); sample too small or all differences are zero
+incident_event_log,medium,social_welfare,SRC,30,0.9307904967696421,0.31731050786292025,0.4235963177660037,ns,normal approximation (scipy unavailable)
+incident_event_log,medium,social_welfare,BGM,30,1.0878313316955237,0.31731050786291953,0.4235963177660037,ns,normal approximation (scipy unavailable)
+incident_event_log,medium,social_welfare,APM,30,1.4395415696260025,0.31739550455048027,3.112315115372921e-05,ns,normal approximation (scipy unavailable)
+incident_event_log,medium,quality_adjusted_welfare,SRC,30,64.02343578094133,0.3173105078629176,0.6744240722352937,ns,normal approximation (scipy unavailable)
+incident_event_log,medium,quality_adjusted_welfare,BGM,30,76.29283836552453,0.3173105078629168,0.6744240722352937,ns,normal approximation (scipy unavailable)
+incident_event_log,medium,quality_adjusted_welfare,APM,30,102.49092454603814,0.317335803208489,3.112315115372921e-05,ns,normal approximation (scipy unavailable)
+incident_event_log,medium,welfare_per_time,SRC,30,1.8637437634320917,0.3173105078629152,0.6744240722352937,ns,normal approximation (scipy unavailable)
+incident_event_log,medium,welfare_per_time,BGM,30,2.1975779577903305,0.3173105078629149,0.6744240722352937,ns,normal approximation (scipy unavailable)
+incident_event_log,medium,welfare_per_time,APM,30,2.9223459734802835,0.3173638254716471,3.112315115372921e-05,ns,normal approximation (scipy unavailable)
+incident_event_log,medium,quality_per_time,SRC,30,0.07826305166671392,0.31731050786291415,,ns,normal approximation (scipy unavailable); sample too small or all differences are zero
+incident_event_log,medium,quality_per_time,BGM,30,0.09414268671506226,0.31731050786291415,,ns,normal approximation (scipy unavailable); sample too small or all differences are zero
+incident_event_log,medium,quality_per_time,APM,30,0.12771330307723688,0.31731050786291404,,ns,normal approximation (scipy unavailable); sample too small or all differences are zero
+incident_event_log,medium,runtime,SRC,30,-0.00099791685740153,0.0,1.7343976283205824e-06,***,normal approximation (scipy unavailable)
+incident_event_log,medium,runtime,BGM,30,-0.0008255799611409505,0.0,1.7343976283205824e-06,***,normal approximation (scipy unavailable)
+incident_event_log,medium,runtime,APM,30,-0.0008094549179077148,0.0,1.7343976283205824e-06,***,normal approximation (scipy unavailable)
+uci_amazon_access,high,U_SC,SRC,29,38.018624747798135,0.17573793834292034,0.25628396376999896,ns,normal approximation (scipy unavailable)
+uci_amazon_access,high,U_SC,BGM,27,78.06697343551649,0.0214663371613621,0.041139141993459465,*,normal approximation (scipy unavailable)
+uci_amazon_access,high,U_SC,APM,29,12.06104907520645,0.5706375020275133,0.991373758871327,ns,normal approximation (scipy unavailable)
+uci_amazon_access,high,U_TSP,SRC,29,15.208609526972156,0.002985341160396952,0.01411853372062442,**,normal approximation (scipy unavailable)
+uci_amazon_access,high,U_TSP,BGM,27,15.228725501248707,0.005733605402578198,0.03881432638926883,**,normal approximation (scipy unavailable)
+uci_amazon_access,high,U_TSP,APM,29,14.67886308328667,0.002693365596588373,0.016877583744026252,**,normal approximation (scipy unavailable)
+uci_amazon_access,high,U_DP,SRC,29,85.80795992888622,1.2400125199800128e-10,1.8215297148968044e-05,***,normal approximation (scipy unavailable)
+uci_amazon_access,high,U_DP,BGM,27,86.09855586247534,1.872445525513377e-09,4.009964816469148e-05,***,normal approximation (scipy unavailable)
+uci_amazon_access,high,U_DP,APM,29,83.94825465968844,1.3284892957991077e-10,1.1939031151376092e-05,***,normal approximation (scipy unavailable)
+uci_amazon_access,high,delivery_time,SRC,29,-0.05022300011762612,1.3214348105703348e-06,4.394142437352959e-05,***,normal approximation (scipy unavailable)
+uci_amazon_access,high,delivery_time,BGM,27,-0.058605631892381556,1.7354863089817347e-06,0.00010460893926546258,***,normal approximation (scipy unavailable)
+uci_amazon_access,high,delivery_time,APM,29,-0.036056915009402994,5.302713891639443e-06,3.883801501287109e-05,***,normal approximation (scipy unavailable)
+uci_amazon_access,high,pS,SRC,29,4.1669566644769365,0.0006876939506443531,0.0017807569949149695,***,normal approximation (scipy unavailable)
+uci_amazon_access,high,pS,BGM,27,3.0573027556270205,0.020151895014674095,0.034498196357106076,*,normal approximation (scipy unavailable)
+uci_amazon_access,high,pS,APM,29,3.551863690232709,0.0010032043097453337,0.0006600573015174919,**,normal approximation (scipy unavailable)
+uci_amazon_access,high,avg_pT,SRC,29,0.011352162248689379,1.0478566664548003e-08,1.8215297148968044e-05,***,normal approximation (scipy unavailable)
+uci_amazon_access,high,avg_pT,BGM,27,0.011826685765576926,2.0906686809952497e-08,4.009964816469148e-05,***,normal approximation (scipy unavailable)
+uci_amazon_access,high,avg_pT,APM,29,0.011530952391576773,8.048312719635384e-09,1.1939031151376092e-05,***,normal approximation (scipy unavailable)
+uci_amazon_access,high,avg_psr,SRC,29,0.045573174969491766,6.668370273304841e-05,0.0010172413503286549,***,normal approximation (scipy unavailable)
+uci_amazon_access,high,avg_psr,BGM,27,0.053695372499105956,6.856272421905692e-05,0.0011031818027374502,***,normal approximation (scipy unavailable)
+uci_amazon_access,high,avg_psr,APM,29,0.051465427259423054,5.7689606440151874e-06,9.067222017758327e-05,***,normal approximation (scipy unavailable)
+uci_amazon_access,high,avg_risk_value,SRC,29,0.0001505528463968411,3.429573237356754e-07,1.8215297148968044e-05,***,normal approximation (scipy unavailable)
+uci_amazon_access,high,avg_risk_value,BGM,27,0.00017946091430408467,6.799516570076387e-08,4.009964816469148e-05,***,normal approximation (scipy unavailable)
+uci_amazon_access,high,avg_risk_value,APM,29,0.00014470656519971443,1.7097398429881437e-09,1.8215297148968044e-05,***,normal approximation (scipy unavailable)
+uci_amazon_access,high,quality_q,SRC,29,5.022300011762612,1.3214348105703266e-06,4.394142437352959e-05,***,normal approximation (scipy unavailable)
+uci_amazon_access,high,quality_q,BGM,27,5.860563189238156,1.7354863089817347e-06,0.00010460893926546258,***,normal approximation (scipy unavailable)
+uci_amazon_access,high,quality_q,APM,29,3.6056915009403006,5.30271389163938e-06,3.883801501287109e-05,***,normal approximation (scipy unavailable)
+uci_amazon_access,high,social_welfare,SRC,29,139.03519420365652,2.1061091887188137e-07,1.3705630970686336e-05,***,normal approximation (scipy unavailable)
+uci_amazon_access,high,social_welfare,BGM,27,179.3942547992405,6.618325776082051e-08,2.8639287393114516e-05,***,normal approximation (scipy unavailable)
+uci_amazon_access,high,social_welfare,APM,29,110.68816681818153,1.3111988348121412e-06,1.1939031151376092e-05,***,normal approximation (scipy unavailable)
+uci_amazon_access,high,quality_adjusted_welfare,SRC,29,5382.438217643688,6.396807046752996e-07,2.353592662196366e-05,***,normal approximation (scipy unavailable)
+uci_amazon_access,high,quality_adjusted_welfare,BGM,27,6020.473052970025,1.5669661850387702e-06,4.0729143349525436e-05,***,normal approximation (scipy unavailable)
+uci_amazon_access,high,quality_adjusted_welfare,APM,29,3855.5739507160383,4.597606704524612e-06,2.3647459450988444e-05,***,normal approximation (scipy unavailable)
+uci_amazon_access,high,welfare_per_time,SRC,29,208.6062040351466,1.8879264591695117e-07,1.3705630970686336e-05,***,normal approximation (scipy unavailable)
+uci_amazon_access,high,welfare_per_time,BGM,27,255.62392751329668,1.209642501303795e-07,3.2228773354575424e-05,***,normal approximation (scipy unavailable)
+uci_amazon_access,high,welfare_per_time,APM,29,160.41530144786128,4.644622863630078e-07,1.1939031151376092e-05,***,normal approximation (scipy unavailable)
+uci_amazon_access,high,quality_per_time,SRC,29,6.686673187087636,2.0462283590054647e-06,4.394142437352959e-05,***,normal approximation (scipy unavailable)
+uci_amazon_access,high,quality_per_time,BGM,27,7.593389742456543,3.2415908675778438e-06,0.00010460893926546258,***,normal approximation (scipy unavailable)
+uci_amazon_access,high,quality_per_time,APM,29,4.779180623334202,1.0757754538159688e-05,3.883801501287109e-05,***,normal approximation (scipy unavailable)
+uci_amazon_access,high,runtime,SRC,30,-0.0006861686706542969,2.6376961888982843e-194,1.7343976283205824e-06,***,normal approximation (scipy unavailable)
+uci_amazon_access,high,runtime,BGM,30,-0.0003909667332967122,1.2138450526363397e-33,1.7343976283205824e-06,***,normal approximation (scipy unavailable)
+uci_amazon_access,high,runtime,APM,30,-0.0003351767857869466,2.0324343220702081e-19,1.7343976283205824e-06,***,normal approximation (scipy unavailable)
+uci_amazon_access,low,U_SC,SRC,30,22.399852851977183,0.0,1.7343976283205824e-06,***,normal approximation (scipy unavailable)
+uci_amazon_access,low,U_SC,BGM,30,22.399852851977183,0.0,1.7343976283205824e-06,***,normal approximation (scipy unavailable)
+uci_amazon_access,low,U_SC,APM,30,22.400282942872977,0.0,1.7343976283205824e-06,***,normal approximation (scipy unavailable)
+uci_amazon_access,low,U_TSP,SRC,30,-22.399852851977187,0.0,1.7343976283205824e-06,***,normal approximation (scipy unavailable)
+uci_amazon_access,low,U_TSP,BGM,30,-22.399852851977187,0.0,1.7343976283205824e-06,***,normal approximation (scipy unavailable)
+uci_amazon_access,low,U_TSP,APM,30,-22.399844074611966,0.0,1.7343976283205824e-06,***,normal approximation (scipy unavailable)
+uci_amazon_access,low,U_DP,SRC,30,0.0,,,ns,all paired differences are zero; sample too small or all differences are zero
+uci_amazon_access,low,U_DP,BGM,30,0.0,,,ns,all paired differences are zero; sample too small or all differences are zero
+uci_amazon_access,low,U_DP,APM,30,-0.0005485853262632158,1.2840731827152852e-54,1.7343976283205824e-06,***,normal approximation (scipy unavailable)
+uci_amazon_access,low,delivery_time,SRC,30,0.0,,,ns,all paired differences are zero; sample too small or all differences are zero
+uci_amazon_access,low,delivery_time,BGM,30,0.0,,,ns,all paired differences are zero; sample too small or all differences are zero
+uci_amazon_access,low,delivery_time,APM,30,0.0,,,ns,all paired differences are zero; sample too small or all differences are zero
+uci_amazon_access,low,pS,SRC,30,-0.5492566230824283,0.0,1.7343976283205824e-06,***,normal approximation (scipy unavailable)
+uci_amazon_access,low,pS,BGM,30,-0.5492566230824283,0.0,1.7343976283205824e-06,***,normal approximation (scipy unavailable)
+uci_amazon_access,low,pS,APM,30,-0.5492673683719776,0.0,1.7343976283205824e-06,***,normal approximation (scipy unavailable)
+uci_amazon_access,low,avg_pT,SRC,30,0.0,,,ns,all paired differences are zero; sample too small or all differences are zero
+uci_amazon_access,low,avg_pT,BGM,30,0.0,,,ns,all paired differences are zero; sample too small or all differences are zero
+uci_amazon_access,low,avg_pT,APM,30,-4.5588189148886404e-08,9.687382137119397e-44,1.7343976283205824e-06,***,normal approximation (scipy unavailable)
+uci_amazon_access,low,avg_psr,SRC,30,0.0,,,ns,all paired differences are zero; sample too small or all differences are zero
+uci_amazon_access,low,avg_psr,BGM,30,0.0,,,ns,all paired differences are zero; sample too small or all differences are zero
+uci_amazon_access,low,avg_psr,APM,30,0.0,,,ns,all paired differences are zero; sample too small or all differences are zero
+uci_amazon_access,low,avg_risk_value,SRC,30,0.0,,,ns,all paired differences are zero; sample too small or all differences are zero
+uci_amazon_access,low,avg_risk_value,BGM,30,0.0,,,ns,all paired differences are zero; sample too small or all differences are zero
+uci_amazon_access,low,avg_risk_value,APM,30,0.0,,,ns,all paired differences are zero; sample too small or all differences are zero
+uci_amazon_access,low,quality_q,SRC,30,0.0,,,ns,all paired differences are zero; sample too small or all differences are zero
+uci_amazon_access,low,quality_q,BGM,30,0.0,,,ns,all paired differences are zero; sample too small or all differences are zero
+uci_amazon_access,low,quality_q,APM,30,0.0,,,ns,all paired differences are zero; sample too small or all differences are zero
+uci_amazon_access,low,social_welfare,SRC,30,2.2737367544323207e-14,0.44170974244906475,0.8647045760375567,ns,normal approximation (scipy unavailable)
+uci_amazon_access,low,social_welfare,BGM,30,2.2737367544323207e-14,0.44170974244906475,0.8647045760375567,ns,normal approximation (scipy unavailable)
+uci_amazon_access,low,social_welfare,APM,30,-0.0001097170652352967,1.2840733766198856e-54,1.7343976283205824e-06,***,normal approximation (scipy unavailable)
+uci_amazon_access,low,quality_adjusted_welfare,SRC,30,1.2126596023639042e-12,0.3365401659359005,0.6092350686367864,ns,normal approximation (scipy unavailable)
+uci_amazon_access,low,quality_adjusted_welfare,BGM,30,1.2126596023639042e-12,0.3365401659359005,0.6092350686367864,ns,normal approximation (scipy unavailable)
+uci_amazon_access,low,quality_adjusted_welfare,APM,30,-0.004410062607106132,7.961625425350947e-75,1.7343976283205824e-06,***,normal approximation (scipy unavailable)
+uci_amazon_access,low,welfare_per_time,SRC,30,5.3053857603420815e-14,0.29597615027674434,0.3634879469815159,ns,normal approximation (scipy unavailable)
+uci_amazon_access,low,welfare_per_time,BGM,30,5.3053857603420815e-14,0.29597615027674434,0.3634879469815159,ns,normal approximation (scipy unavailable)
+uci_amazon_access,low,welfare_per_time,APM,30,-0.0001837987283882588,2.6525436728298935e-67,1.7343976283205824e-06,***,normal approximation (scipy unavailable)
+uci_amazon_access,low,quality_per_time,SRC,30,0.0,,,ns,all paired differences are zero; sample too small or all differences are zero
+uci_amazon_access,low,quality_per_time,BGM,30,0.0,,,ns,all paired differences are zero; sample too small or all differences are zero
+uci_amazon_access,low,quality_per_time,APM,30,0.0,,,ns,all paired differences are zero; sample too small or all differences are zero
+uci_amazon_access,low,runtime,SRC,30,-0.0009012381235758463,0.0,1.7343976283205824e-06,***,normal approximation (scipy unavailable)
+uci_amazon_access,low,runtime,BGM,30,-0.0007315238316853841,0.0,1.7343976283205824e-06,***,normal approximation (scipy unavailable)
+uci_amazon_access,low,runtime,APM,30,-0.000722495714823405,0.0,1.7343976283205824e-06,***,normal approximation (scipy unavailable)
+uci_amazon_access,medium,U_SC,SRC,30,18.616397455396438,0.0,1.7343976283205824e-06,***,normal approximation (scipy unavailable)
+uci_amazon_access,medium,U_SC,BGM,30,18.616397455396438,0.0,1.7343976283205824e-06,***,normal approximation (scipy unavailable)
+uci_amazon_access,medium,U_SC,APM,30,18.61753515569051,0.0,1.7343976283205824e-06,***,normal approximation (scipy unavailable)
+uci_amazon_access,medium,U_TSP,SRC,30,-18.61639745539643,0.0,1.7343976283205824e-06,***,normal approximation (scipy unavailable)
+uci_amazon_access,medium,U_TSP,BGM,30,-18.61639745539643,0.0,1.7343976283205824e-06,***,normal approximation (scipy unavailable)
+uci_amazon_access,medium,U_TSP,APM,30,-18.616374237023084,0.0,1.7343976283205824e-06,***,normal approximation (scipy unavailable)
+uci_amazon_access,medium,U_DP,SRC,30,0.0,,,ns,all paired differences are zero; sample too small or all differences are zero
+uci_amazon_access,medium,U_DP,BGM,30,0.0,,,ns,all paired differences are zero; sample too small or all differences are zero
+uci_amazon_access,medium,U_DP,APM,30,-0.0014511483342821972,6.371058079289504e-75,1.7343976283205824e-06,***,normal approximation (scipy unavailable)
+uci_amazon_access,medium,delivery_time,SRC,30,0.0,,,ns,all paired differences are zero; sample too small or all differences are zero
+uci_amazon_access,medium,delivery_time,BGM,30,0.0,,,ns,all paired differences are zero; sample too small or all differences are zero
+uci_amazon_access,medium,delivery_time,APM,30,0.0,,,ns,all paired differences are zero; sample too small or all differences are zero
+uci_amazon_access,medium,pS,SRC,30,-0.8899983005091692,1.0847427546046382e-166,1.7343976283205824e-06,***,normal approximation (scipy unavailable)
+uci_amazon_access,medium,pS,BGM,30,-0.8899983005091692,1.0847427546046382e-166,1.7343976283205824e-06,***,normal approximation (scipy unavailable)
+uci_amazon_access,medium,pS,APM,30,-0.8900577893166518,1.1839357582216151e-166,1.7343976283205824e-06,***,normal approximation (scipy unavailable)
+uci_amazon_access,medium,avg_pT,SRC,30,0.0,,,ns,all paired differences are zero; sample too small or all differences are zero
+uci_amazon_access,medium,avg_pT,BGM,30,0.0,,,ns,all paired differences are zero; sample too small or all differences are zero
+uci_amazon_access,medium,avg_pT,APM,30,-1.8206988890802258e-07,1.116597047689026e-47,1.7343976283205824e-06,***,normal approximation (scipy unavailable)
+uci_amazon_access,medium,avg_psr,SRC,30,0.0,,,ns,all paired differences are zero; sample too small or all differences are zero
+uci_amazon_access,medium,avg_psr,BGM,30,0.0,,,ns,all paired differences are zero; sample too small or all differences are zero
+uci_amazon_access,medium,avg_psr,APM,30,0.0,,,ns,all paired differences are zero; sample too small or all differences are zero
+uci_amazon_access,medium,avg_risk_value,SRC,30,0.0,,,ns,all paired differences are zero; sample too small or all differences are zero
+uci_amazon_access,medium,avg_risk_value,BGM,30,0.0,,,ns,all paired differences are zero; sample too small or all differences are zero
+uci_amazon_access,medium,avg_risk_value,APM,30,0.0,,,ns,all paired differences are zero; sample too small or all differences are zero
+uci_amazon_access,medium,quality_q,SRC,30,0.0,,,ns,all paired differences are zero; sample too small or all differences are zero
+uci_amazon_access,medium,quality_q,BGM,30,0.0,,,ns,all paired differences are zero; sample too small or all differences are zero
+uci_amazon_access,medium,quality_q,APM,30,0.0,,,ns,all paired differences are zero; sample too small or all differences are zero
+uci_amazon_access,medium,social_welfare,SRC,30,1.1368683772161604e-14,0.36721000016612104,0.8588630128278887,ns,normal approximation (scipy unavailable)
+uci_amazon_access,medium,social_welfare,BGM,30,1.1368683772161604e-14,0.36721000016612104,0.8588630128278887,ns,normal approximation (scipy unavailable)
+uci_amazon_access,medium,social_welfare,APM,30,-0.0002902296668442735,6.371058059575782e-75,1.7343976283205824e-06,***,normal approximation (scipy unavailable)
+uci_amazon_access,medium,quality_adjusted_welfare,SRC,30,-6.063298011819522e-14,0.8374483388585112,0.779434528427275,ns,normal approximation (scipy unavailable)
+uci_amazon_access,medium,quality_adjusted_welfare,BGM,30,-6.063298011819522e-14,0.8374483388585112,0.779434528427275,ns,normal approximation (scipy unavailable)
+uci_amazon_access,medium,quality_adjusted_welfare,APM,30,-0.005998078618298071,2.283598968394246e-150,1.7343976283205824e-06,***,normal approximation (scipy unavailable)
+uci_amazon_access,medium,welfare_per_time,SRC,30,2.2737367544323207e-14,0.3029927764516282,0.5076243443095237,ns,normal approximation (scipy unavailable)
+uci_amazon_access,medium,welfare_per_time,BGM,30,2.2737367544323207e-14,0.3029927764516282,0.5076243443095237,ns,normal approximation (scipy unavailable)
+uci_amazon_access,medium,welfare_per_time,APM,30,-0.0003677137071804282,1.3661558848649154e-107,1.7343976283205824e-06,***,normal approximation (scipy unavailable)
+uci_amazon_access,medium,quality_per_time,SRC,30,0.0,,,ns,all paired differences are zero; sample too small or all differences are zero
+uci_amazon_access,medium,quality_per_time,BGM,30,0.0,,,ns,all paired differences are zero; sample too small or all differences are zero
+uci_amazon_access,medium,quality_per_time,APM,30,0.0,,,ns,all paired differences are zero; sample too small or all differences are zero
+uci_amazon_access,medium,runtime,SRC,30,-0.0008913914362589519,0.0,1.7343976283205824e-06,***,normal approximation (scipy unavailable)
+uci_amazon_access,medium,runtime,BGM,30,-0.0007158438364664714,0.0,1.7343976283205824e-06,***,normal approximation (scipy unavailable)
+uci_amazon_access,medium,runtime,APM,30,-0.0007092555363972982,0.0,1.7343976283205824e-06,***,normal approximation (scipy unavailable)

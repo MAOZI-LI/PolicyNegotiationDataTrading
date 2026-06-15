@@ -1,0 +1,25 @@
+Risk-cost functional-form backward-induction audit
+=================================================
+1. The benchmark risk cost is quadratic: C_R=lambda*D*sum_i rho_i*r_i^2, where r_i=(y_i+z_i)/|B_i|.
+2. Alternative risk-cost functions tested here are linear f(r)=r, cubic f(r)=r^3, and threshold f(r)=r^2+k*max(0,r-theta)^2.
+3. Default threshold parameters: theta=0.5, k=4.0 for the threshold row.
+4. Because provider utility directly depends on the risk-cost function, Stage 3 is not reused under non-quadratic risk cost.
+5. Stage 3 is recomputed numerically per attribute. x is set to its maximum because it increases revenue without increasing risk, y is set to zero because it only increases risk, and z is optimized over the feasible interval.
+6. Discrete z values are enumerated exactly; ties are broken deterministically toward the larger z, matching the original >=0.5 rounding-up convention at indifference boundaries.
+7. Stage 2 recomputes p_T^*(p_S) numerically with non-negative bounded p_T and multi-start coordinate grid search plus local refinement.
+8. Stage 1 recomputes p_S^* using deterministic multi-resolution grid search over p_S>=0.
+9. No linear/quadratic closed-form p_T^*(p_S), p_S^*, or provider z^* is used when risk_cost_type != quadratic.
+10. Calibration results:
+   - quadratic benchmark: pS=9.18122, avg_pT=0.000640424, avg_psr=0.530041, delivery_time=0.870994, quality_q=12.9006, USC=671.136, UTSP=61.2473, UDP=45.0938, Stage1=analytical benchmark
+   - linear risk cost: pS=37.5, avg_pT=0.00251277, avg_psr=0.670629, delivery_time=0.821218, quality_q=17.8782, USC=210.969, UTSP=14.6345, UDP=181.173, Stage1=multi_resolution_grid, domain=[0,600], final_step=1.171875, status=interior
+   - cubic risk cost: pS=4.6875, avg_pT=0.000509653, avg_psr=0.647157, delivery_time=0.783507, quality_q=21.6493, USC=834.557, UTSP=32.7051, UDP=62.6833, Stage1=multi_resolution_grid, domain=[0,600], final_step=1.171875, status=interior
+   - threshold risk cost: pS=7.03125, avg_pT=0.000858597, avg_psr=0.550335, delivery_time=0.851014, quality_q=14.8986, USC=725.113, UTSP=23.5532, UDP=63.1096, Stage1=multi_resolution_grid, domain=[0,600], final_step=1.171875, status=interior
+11. Recommendation ranking:
+   - threshold: score=101.000, same_order=True, fig2_internal_peak=False, |UDP-quadratic|=18.0158
+   - cubic: score=100.500, same_order=True, fig2_internal_peak=False, |UDP-quadratic|=17.5895
+   - linear: score=100.000, same_order=True, fig2_internal_peak=False, |UDP-quadratic|=136.08
+   Recommended risk-cost setting: threshold.
+12. Generated paths:
+   - Calibration CSV: results/robustness_quality_decay/risk_cost_calibration.csv
+   - Effectiveness CSV directory: results/robustness_quality_decay/risk_cost
+   - Figure directory: figures/robustness_quality_decay/risk_cost
