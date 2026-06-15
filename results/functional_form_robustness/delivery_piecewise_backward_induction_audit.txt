@@ -19,6 +19,6 @@ Piecewise delivery-time backward-induction audit
    - delivery_piecewise_mild: score=0.000, same_order=False, fig2_internal_peak=False, |delivery_time-linear|=0.299417
    Recommended piecewise delivery setting: delivery_piecewise_default.
 11. Generated paths:
-   - Calibration CSV: results/robustness_quality_decay/delivery_piecewise_calibration.csv
-   - Effectiveness CSV directory: results/robustness_quality_decay/delivery_time_piecewise
-   - Figure directory: figures/robustness_quality_decay/delivery_time_piecewise
+   - Calibration CSV: results/functional_form_robustness/delivery_piecewise_calibration.csv
+   - Effectiveness CSV directory: results/functional_form_robustness/delivery_time_piecewise
+   - Figure directory: figures/functional_form_robustness/delivery_time_piecewise

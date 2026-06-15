@@ -39,8 +39,8 @@ DECAY_CONFIGS = [
     ('power', 0.1, POWER_ALPHA_DEFAULT),
 ]
 
-FIG_ROOT = 'figures/robustness_quality_decay'
-RESULT_ROOT = 'results/robustness_quality_decay'
+FIG_ROOT = 'figures/functional_form_robustness'
+RESULT_ROOT = 'results/functional_form_robustness'
 
 EFFECTIVENESS_FIGS = (
     'fig2_service_consumer_strategy',
@@ -49,7 +49,7 @@ EFFECTIVENESS_FIGS = (
 )
 
 
-def calibrate_exp_eta(linear_csv='results/robustness_quality_decay/linear_effectiveness.csv'):
+def calibrate_exp_eta(linear_csv='results/functional_form_robustness/linear_effectiveness.csv'):
     """Match q_exp(r)=q_max*exp(-eta*r) to q_linear(r)=q_max*(1-r) at median t/t_0 from linear runs."""
     import math
     df = pd.read_csv(linear_csv)
@@ -59,7 +59,7 @@ def calibrate_exp_eta(linear_csv='results/robustness_quality_decay/linear_effect
     return r_star, eta
 
 
-def calibrate_power_alpha(linear_csv='results/robustness_quality_decay/linear_effectiveness.csv'):
+def calibrate_power_alpha(linear_csv='results/functional_form_robustness/linear_effectiveness.csv'):
     """Match q_pow(r)=q_max*(1-r^alpha) to q_linear(r)=q_max*(1-r) at median t/t_0 from linear runs.
 
     For 0 < r* < 1, 1 - r*^alpha = 1 - r* implies alpha = 1 (power curve coincides with linear on [0,1]).

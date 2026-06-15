@@ -1870,7 +1870,7 @@ def draw():
 if __name__ == '__main__':
     import sys
     if len(sys.argv) > 1 and sys.argv[1] == 'quality_decay':
-        from robustness_quality_decay import run_all_robustness_experiments
+        from functional_form_robustness import run_all_robustness_experiments
         run_all_robustness_experiments(fast=True)
     else:
         #exp1()

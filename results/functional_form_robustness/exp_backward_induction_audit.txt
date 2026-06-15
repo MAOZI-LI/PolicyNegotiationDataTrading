@@ -13,4 +13,4 @@ Exponential quality decay backward-induction audit
    - exp eta_scale=2.5: pS=6.61866, avg_pT=0.000228205, avg_psr=0.462662, delivery_time=0.996005, time_ratio=0.996005, quality_q=8.29089, USC=613.836, UTSP=46.4418, UDP=6.44903, Stage1=multi_resolution_grid, domain=[0,600], final_step=8.372449417019348e-06, status=interior
    - exp eta_scale=3.0: pS=10.4317, avg_pT=0.000262853, avg_psr=0.468275, delivery_time=0.980669, time_ratio=0.980669, quality_q=5.27598, USC=495.981, UTSP=44.1118, UDP=8.40082, Stage1=multi_resolution_grid, domain=[0,600], final_step=8.372449417019348e-06, status=interior
 9. Generated paths:
-   - Calibration CSV: results/robustness_quality_decay/exp_decay_calibration.csv
+   - Calibration CSV: results/functional_form_robustness/exp_decay_calibration.csv

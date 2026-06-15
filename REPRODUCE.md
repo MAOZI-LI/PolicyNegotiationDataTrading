@@ -23,18 +23,18 @@ figures/comparison_revised/compare_revised.pdf
 ## 3. Functional-Form Robustness Experiments
 
 ```bash
-python src/robustness_quality_decay.py calibrate-exp
-python src/robustness_quality_decay.py power-calibrate
-python src/robustness_quality_decay.py delivery-power-calibrate
-python src/robustness_quality_decay.py delivery-piecewise-calibrate
-python src/robustness_quality_decay.py risk-cost-calibrate
+python src/functional_form_robustness.py calibrate-exp
+python src/functional_form_robustness.py power-calibrate
+python src/functional_form_robustness.py delivery-power-calibrate
+python src/functional_form_robustness.py delivery-piecewise-calibrate
+python src/functional_form_robustness.py risk-cost-calibrate
 ```
 
 Outputs are written to:
 
 ```text
-results/robustness_quality_decay/
-figures/robustness_quality_decay/
+results/functional_form_robustness/
+figures/functional_form_robustness/
 ```
 
 ## 4. Statistical Robustness Experiments
@@ -47,7 +47,7 @@ python src/run_robustness_experiments.py \
   --num-runs 10 \
   --overlap-levels medium \
   --base-seed 2026 \
-  --output-dir results/robustness
+  --output-dir results/statistical_robustness
 ```
 
 Full setting:
@@ -58,15 +58,15 @@ python src/run_robustness_experiments.py \
   --num-runs 30 \
   --overlap-levels low medium high \
   --base-seed 2026 \
-  --output-dir results/robustness
+  --output-dir results/statistical_robustness
 ```
 
 Outputs:
 
 ```text
-results/robustness/dataset_profiles.csv
-results/robustness/robustness_raw_results.csv
-results/robustness/robustness_summary.csv
-results/robustness/significance_tests.csv
-results/robustness/figures/
+results/statistical_robustness/dataset_profiles.csv
+results/statistical_robustness/robustness_raw_results.csv
+results/statistical_robustness/robustness_summary.csv
+results/statistical_robustness/significance_tests.csv
+results/statistical_robustness/figures/
 ```

@@ -28,7 +28,7 @@ def parse_args():
     parser.add_argument('--overlap-levels', nargs='+', default=['low', 'medium', 'high'],
                         choices=['low', 'medium', 'high'])
     parser.add_argument('--base-seed', type=int, default=2026)
-    parser.add_argument('--output-dir', default='results/robustness')
+    parser.add_argument('--output-dir', default='results/statistical_robustness')
     parser.add_argument('--max-rows', type=int, default=None,
                         help='Optional row cap for quick profiling/debugging. Default reads full configured data.')
     return parser.parse_args()

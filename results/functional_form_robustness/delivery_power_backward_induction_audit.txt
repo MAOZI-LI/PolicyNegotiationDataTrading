@@ -19,6 +19,6 @@ Power delivery-time backward-induction audit
    - beta=2.0: score=-0.500, same_order=False, fig2_internal_peak=False, |delivery_time-linear|=0.158305
    Recommended beta: 1.5.
 11. Generated paths:
-   - Calibration CSV: results/robustness_quality_decay/delivery_power_calibration.csv
-   - Effectiveness CSV directory: results/robustness_quality_decay/delivery_time_power
-   - Figure directory: figures/robustness_quality_decay/delivery_time_power
+   - Calibration CSV: results/functional_form_robustness/delivery_power_calibration.csv
+   - Effectiveness CSV directory: results/functional_form_robustness/delivery_time_power
+   - Figure directory: figures/functional_form_robustness/delivery_time_power

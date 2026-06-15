@@ -20,6 +20,6 @@ Risk-cost functional-form backward-induction audit
    - linear: score=100.000, same_order=True, fig2_internal_peak=False, |UDP-quadratic|=136.08
    Recommended risk-cost setting: threshold.
 12. Generated paths:
-   - Calibration CSV: results/robustness_quality_decay/risk_cost_calibration.csv
-   - Effectiveness CSV directory: results/robustness_quality_decay/risk_cost
-   - Figure directory: figures/robustness_quality_decay/risk_cost
+   - Calibration CSV: results/functional_form_robustness/risk_cost_calibration.csv
+   - Effectiveness CSV directory: results/functional_form_robustness/risk_cost
+   - Figure directory: figures/functional_form_robustness/risk_cost

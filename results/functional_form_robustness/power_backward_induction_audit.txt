@@ -20,7 +20,7 @@ Power-law decay backward-induction audit
    - alpha=0.8: score=99.600, same_order=True, fig2_internal_peak=False, |quality-linear|=0.468647
    Recommended alpha: 1.2. It is a mild nonlinear perturbation and satisfies the same-order equilibrium and Fig.2 internal-peak checks.
 12. Generated paths:
-   - Calibration CSV: results/robustness_quality_decay/power_decay_calibration.csv
-   - Power effectiveness CSV directory: results/robustness_quality_decay/power
-   - Power figure directory: figures/robustness_quality_decay/power
-   - Response text: results/robustness_quality_decay/power_response_text.txt
+   - Calibration CSV: results/functional_form_robustness/power_decay_calibration.csv
+   - Power effectiveness CSV directory: results/functional_form_robustness/power
+   - Power figure directory: figures/functional_form_robustness/power
+   - Response text: results/functional_form_robustness/power_response_text.txt
